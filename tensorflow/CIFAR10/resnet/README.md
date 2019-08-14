@@ -70,7 +70,8 @@ cifar_input.py  README.md  resnet_main.py  resnet_model.py
 $ python3 resnet/resnet_main.py --train_data_path=cifar10/data_batch* \
                                 --log_root=/tmp/resnet_model \
                                 --train_dir=/tmp/resnet_model/train \
-                                --dataset='cifar10' \
+                                --dataset=cifar10 \
+                                --model=resnet20 \ 
                                 --num_gpus=1
 
 # While the model is training, you can also check on its progress using tensorboard:
